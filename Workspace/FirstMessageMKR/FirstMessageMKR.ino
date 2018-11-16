@@ -23,7 +23,7 @@ void setup() {
   
   // open Wisol communication
   Serial1.begin(9600);
-  delay(100);
+  delay(1000);
   getID();
   delay(100);
   getPAC();
@@ -153,4 +153,3 @@ void sendMessage(uint8_t msg[], int size){
     Serial.println(status);
   }
 }
-
